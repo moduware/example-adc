@@ -1,0 +1,16 @@
+{
+  "id": "nexpaq.tile.example-adc",
+  "name": "ADC Example",
+  "description": "Tile for adc hardware example",
+
+  "version": "1.0.0",
+  "changes": "Initial release",
+  "minumumAppVersion": "1.0.5",
+  "modules": [
+    "nexpaq.module.devmod"
+  ],
+  
+  "title": "ADC",
+  "color": "black",
+  "textColor": "white"
+}

@@ -1,0 +1,21 @@
+{
+    "type": "nexpaq.module.devmod",
+    "version": "1.0.0",
+    "data": [
+        {
+            "name": "AdcSensorValue",
+            "title": "ADC Sensor Value",
+            "description": "Value from module ADC sensor",
+            "source": "2800",
+            "variables": [
+                {
+                    "name": "adc",
+                    "title": "ADC value",
+                    "desciption": "Number represention ADC value from sensor",
+                    "data": [0, 1],
+                    "format": "{0} * 256 + {1}"
+                }
+            ]
+        }
+    ]
+}
