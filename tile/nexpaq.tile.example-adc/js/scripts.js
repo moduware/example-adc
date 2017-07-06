@@ -20,6 +20,7 @@ document.addEventListener('NexpaqAPIReady', function() {
 		 * - Target module type (i.e. nexpaq.module.laser)
 		 */
 		var targetModuleUuid = Nexpaq.Arguments[0];
+		
 		// we don't care about data not related to our module
 		if(event.moduleUuid != targetModuleUuid) return;
 
@@ -38,6 +39,7 @@ document.addEventListener('NexpaqAPIReady', function() {
  * @param {int} adc Number representing ADC value
  */
 function handleAdcValue(adc) {
+	adc = parseInt(adc);
 	var voltage = adc * 3.3 / 1023; // Calculating voltage out of ADC value
 
 	document.getElementById('adc-value').textContent = adc.toFixed(2);
